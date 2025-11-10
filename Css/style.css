@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: floralwhite;
+}
+@font-face {
+    font-family: 'Nope';
+    src: url(../assests/fonts/Nope-LightExpanded.otf);
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    
+    /* background-size:auto;
+
+    background-repeat: no-repeat; */
+}
+.second-section{
+    padding: 50px 0;
+    height: 100vh;
+}
+nav{
+    height:80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-shrink: 0;
+}
+nav>img{
+    height: 45%;
+    width: 200px;
+    margin: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    
+}
+
+
+.eight>img{
+    height: 60px;
+    width: 80px;
+    /* margin-right: 20px; */
+}
+.scrolling-text{
+    background-color: rgba(255, 0, 13, 0.86);
+    color: white;
+    font-size: small;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size:16px;
+    
+}
+ul>a:hover{
+    /* cursor: pointer; */
+    color: red;
+    border-bottom: 2.5px solid red;
+    /* padding-bottom: 20px; */
+}
+.home-banner{
+    height:770px;
+    width: 100%;
+    background: url(../assests/Mahindra_BE-6&-XEV-9-Banner-Global-Premiere-Banner_REVISED.webp) no-repeat;
+    background-size: cover;
+}
+
+.home-banner .title{
+    color: white;
+    text-align: center;
+    /* padding-top: 200px; */
+    position: relative;
+    top:100px;
+    right: 410px;
+    font-family: "Nope";
+    /* width: 200px; */
+    font-size: small;
+    flex-shrink: 0;
+}
+.title1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* larger, responsive heading size to match the design */
+    font-size:32px;
+    line-height: 0.9;
+    margin: 0px 0px 8px;
+    padding: 0px;
+    font-weight: 500;
+    font-stretch: 100%;
+    text-transform: uppercase;
+    text-indent: 0px;
+    /* wide letter spacing to create the geometric look */
+    letter-spacing: 0.35em;
+    vertical-align: baseline;
+    word-spacing: 0px;
+    
+}
+.title2{
+    transform: translate(0px,0px);
+    opacity: 1;
+    visibility: inherit;
+    font-family: georama,sans-serif;
+    font-size:16px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-stretch: 100%;
+    /* text-align: left; */
+    text-indent: 0px;
+    letter-spacing: normal;
+    vertical-align: baseline;
+    word-spacing: 0px;
+    margin: 0px 0px 32px;
+    font-style: normal;
+
+}
+.line1{
+    width: 120px;
+    height: 10px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    rotate: -22deg;
+    top: -40px;
+    left: 760px;
+    border-radius: 2px;
+}
+
+.line2{
+    width: 140px;
+    height: 10px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    rotate: -22deg;
+    top: -15px;
+    left: 380px;
+    border-radius: 2px;
+}
+.imag {
+    grid-row: 3 / 3;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 18px ;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width:1024px) {
+    .imag {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home-banner{
+        height:600px;
+    }
+}
+@media (max-width:768px) {
+    .imag {
+        grid-template-columns: repeat(1, 1fr);
+    }   
+    .home-banner{
+        height:500px;
+    }
+}
+
+.imag img {
+    width: 320px;
+    height: 200px;
+    border-radius: 8px;
+}
+.faq{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+    margin-top: 50px;
+}
+h1{
+    font-family: 'Nope';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.question{
+    
+    /* flex-direction: column; */
+    gap: 20px;
+    background-color: rgb(236, 236, 236);
+    color: red;
+    width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: start;
+}

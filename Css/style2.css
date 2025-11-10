@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    width: 100%;
+    height: 400vh;
+    grid-template-rows: 100vh 100vh 100vh 100vh;
+}
+/* 1st Page START */
+.page1 {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 20px 70px auto auto;
+    background: url(../assests/Mahindra_BE-6&-XEV-9-Banner-Global-Premiere-Banner_REVISED.webp) no-repeat;
+    background-size: cover;
+}
+.scrolling-text{
+    grid-row: 1 / 2;
+    overflow: hidden;
+    background-color: rgb(212, 46, 54);
+}
+.scrolling-text span{
+    display: inline-block;
+    color: white;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+nav{
+    grid-row: 2 / 3;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav>.logo{
+    height: 45%;
+    margin: 20px;
+}
+nav>.right{
+    height: 75%;
+}
+nav>.nav-items{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-items>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.nav-items>a:hover{
+    color: rgb(212, 46, 54);
+    transition: tranform 400ms linear;
+    transform: scale(1.1);
+}
+.card{
+    grid-row: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    height: 60%;
+    width: 30%;
+    background-color: transparent;
+    color: #fff;
+}
+.card>h1{
+    font-size: 4rem;
+}
+.card>p{
+    font-size: 1rem;
+}
+.card>.top{
+    height: 80px;
+    width: 7px;
+    background-color: rgb(190, 29, 37);
+    rotate: 65deg;
+    position: relative;
+    left: 90px;
+    bottom: 120px;
+}
+.card>.bottom{
+    height: 80px;
+    width: 7px;
+    background-color: rgb(190, 29, 37);
+    rotate: 65deg;
+    position: relative;
+    right: 210px;
+    bottom: 15px;
+}
+/* 1st Page END */
+
+/* 2nd Page START */
+.page2 {
+    grid-row: 2 / 3;
+    /* background-color: magenta; */
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+}
+.row1{
+    grid-row: 1 / 2;
+    background-color: #fff;
+}
+.row2{
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row2>img{
+    height: 85%;
+    border-radius: 15px;
+    position: relative;
+}
+.row2>img:nth-child(1){
+    left: 30px;
+}
+.row2>img:nth-child(3){
+    right: 30px;
+}
+.row3{
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row3>img{
+    height: 85%;
+    border-radius: 15px;
+    position: relative;
+}
+.row3>img:nth-child(1){
+    left: 30px;
+    bottom: 20px;
+}
+.row3>img:nth-child(2){
+    bottom: 20px;
+}
+.row3>img:nth-child(3){
+    right: 30px;
+    bottom: 20px;
+}
+/* 2nd Page END */
+
+/* 3rd Page START */
+.page3 {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: 45% 10% auto;
+}
+.pg3-row1{
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pg3-row1>img{
+    height: 85%;
+    border-radius: 15px;
+    position: relative;
+}
+.pg3-row1>img:nth-child(1){
+    left: 30px;
+    bottom: 40px;
+}
+.pg3-row1>img:nth-child(2){
+    bottom: 40px;
+}
+.pg3-row1>img:nth-child(3){
+    right: 30px;
+    bottom: 40px;
+}
+.pg3-row3{
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pg3-row3>div:nth-child(1){
+    background-color: antiquewhite;
+    width: 80%;
+    height: 40px;
+    font-size: 2rem;
+}
+.page4{
+    grid-row: 4 / 5;
+    background-color: green;
+}
